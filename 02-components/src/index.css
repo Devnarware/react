@@ -18,7 +18,7 @@ body{
 }
 
 .parent{
-  padding: 20px;
+  padding: 12px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -30,6 +30,33 @@ body{
   padding: 20px;
   text-align: center;
 
+
   border: 2px solid rgb(191, 191, 191);
   border-radius: 15px;
+
+  background-color: #222;
+}
+
+.card img{
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card p{
+  margin: 5px 0px;
+}
+
+.card button{
+  margin: 10px;
+  padding: 10px 20px;
+
+  color: #111;
+  background: #d6d4d4;
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 700;
 }

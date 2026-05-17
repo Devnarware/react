@@ -5,8 +5,6 @@ const App = () => {
     <div className="parent">
       <Card></Card>
       <Card></Card>
-      <Card></Card>
-      <Card></Card>
     </div>
   )
 }
