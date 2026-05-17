@@ -1,8 +1,13 @@
-
+import Card from "./components/Card.jsx"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="parent">
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+    </div>
   )
 }
 
