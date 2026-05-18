@@ -1,4 +1,4 @@
-// import { Bookmark } from 'lucide-react';
+import { Bookmark } from '../../../node_modules/lucide-react';
 
 
 const card = () => {
@@ -6,8 +6,8 @@ const card = () => {
     <div className="card">
         <div>
             <div className="top">
-                <img src="" alt="logo" />
-                <button>Save </button>
+                <img src="https://imgs.search.brave.com/-kYf5CYKNI9LVjMyP3ue1jngBaYrdPgP00RRu3ty89M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNiLzcw/L2FjLzNiNzBhYzdj/M2RhMjhlNDdmZGVl/NGNiMjlkYmM1YzY3/LmpwZw" alt="logo" />
+                <button>Save <Bookmark /></button>
             </div>
             <div className="center">
                 <h3>Amazon <span>5 days ago</span></h3>
@@ -18,7 +18,7 @@ const card = () => {
                 </div>
             </div>
         </div>
-        <br />
+        
         <div className="bottom">
             <div>
                 <h3>$120/hr</h3>

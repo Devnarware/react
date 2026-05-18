@@ -4,7 +4,7 @@
   box-sizing: border-box;
 
   font-family: system-ui ;
-  color: #f5f1f1;
+  /* color: #f5f1f1; */
 }
 
 html, body{
@@ -14,5 +14,44 @@ html, body{
 }
 
 body{
-  background-color: #111;
+  background-color: #392626da;
 }
+
+.card{
+  height: 350px;
+  width: 280px;
+  background-color: #f5f1f1;
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  padding: 10px;
+
+}
+
+.card .top{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+
+  background-color: aqua;
+}
+
+.top img{
+  height: 40px;
+  border-radius: 50%;
+  /* border: 2px solid red; */
+}
+
+.top button{
+  border: none;
+  border-radius: 5px;
+  background-color: #dfdbdb;
+  padding: 10px;
+
+  margin-bottom: 30px;
+}
+
+.card
