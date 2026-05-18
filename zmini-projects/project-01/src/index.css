@@ -1,24 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  font-family: system-ui ;
+  font-family: system-ui;
   /* color: #f5f1f1; */
 }
 
-html, body{
+html,
+body {
   height: 100%;
   width: 100%;
 
 }
 
-body{
+body {
   background-color: #392626da;
 }
 
-.card{
-  height: 350px;
+.card {
+  height: 370px;
   width: 280px;
   background-color: #f5f1f1;
   border-radius: 30px;
@@ -27,31 +28,105 @@ body{
   justify-content: space-around;
   flex-direction: column;
 
-  padding: 10px;
+  /* padding: 10px; */
 
 }
 
-.card .top{
+.card .top {
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
+  align-items: center;
 
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
-.top img{
+.top .image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(215, 215, 215);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top img {
   height: 40px;
   border-radius: 50%;
   /* border: 2px solid red; */
 }
 
-.top button{
-  border: none;
-  border-radius: 5px;
-  background-color: #dfdbdb;
-  padding: 10px;
+.top button {
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 10px;
+  background-color: #f5f1f1;
+  padding: 7px 15px;
 
-  margin-bottom: 30px;
+
+  /* height: 40px;
+  width:  90px; */
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* justify-content: center; */
+
+  cursor: pointer;
 }
 
-.card
+.card .center {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 11px;
+
+}
+
+
+.center h3 {
+  font-weight: 400;
+}
+
+.center span {
+  font-size: 13px;
+  color: #949494;
+}
+
+.center h2 {
+  font-weight: 400;
+}
+
+.center .tags {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tags h4 {
+  background-color: #dbdbdb;
+  font-size: small;
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-weight: 300;
+}
+
+.card .bottom {
+  border-top: 1px solid rgb(211, 210, 210);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding-top: 20px;
+  /* background-color: aqua; */
+}
+
+.bottom button {
+  border: none;
+  border-radius: 10px;
+  background-color: #121212ec;
+  color: rgb(229, 229, 229);
+  padding: 8px 15px;
+
+  cursor: pointer;
+}

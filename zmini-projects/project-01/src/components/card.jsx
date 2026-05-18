@@ -6,7 +6,9 @@ const card = () => {
     <div className="card">
         <div>
             <div className="top">
-                <img src="https://imgs.search.brave.com/-kYf5CYKNI9LVjMyP3ue1jngBaYrdPgP00RRu3ty89M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNiLzcw/L2FjLzNiNzBhYzdj/M2RhMjhlNDdmZGVl/NGNiMjlkYmM1YzY3/LmpwZw" alt="logo" />
+                <div className="image">
+                    <img src="https://imgs.search.brave.com/-kYf5CYKNI9LVjMyP3ue1jngBaYrdPgP00RRu3ty89M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNiLzcw/L2FjLzNiNzBhYzdj/M2RhMjhlNDdmZGVl/NGNiMjlkYmM1YzY3/LmpwZw" alt="logo" />
+                </div>
                 <button>Save <Bookmark /></button>
             </div>
             <div className="center">
@@ -18,7 +20,7 @@ const card = () => {
                 </div>
             </div>
         </div>
-        
+
         <div className="bottom">
             <div>
                 <h3>$120/hr</h3>
