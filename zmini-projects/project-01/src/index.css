@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background-color: #392626da;
+  background-color: #000000ea;
 }
 
 .card {
@@ -52,8 +52,10 @@ body {
 }
 
 .top img {
-  height: 40px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
+  object-fit: cover;
   /* border: 2px solid red; */
 }
 
