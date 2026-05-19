@@ -28,5 +28,21 @@ What is Props
 ```
 Props are the short form of properties. It is used to pass data from the parent component to child component. It is a read only data which can not be modified by the child component. It is used to make the component dynamic. Means same component can be reused with different data.
 ```
+##
+
+Destructuring
+
+Destructuring is a feature of JavaScript which allows us to extract values from an array or an object or from the function's parameter and assign them to variables. 
+
+```
+Example: function({name, age}) {
+    console.log(name);
+    console.log(age);
+}
+
+in the above the above example we are destructuring the props object and extracting the name and age properties and assigning them to variables name and age. So we can use these variables in our component instead of using props.name and props.age. This makes our code cleaner and more readable.
+```
+
+
 
 
