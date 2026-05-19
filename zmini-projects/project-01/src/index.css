@@ -17,7 +17,15 @@ body {
 body {
   background-color: #000000ea;
 }
-
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 .card {
   height: 370px;
   width: 280px;
