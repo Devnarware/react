@@ -1,8 +1,12 @@
-
+import Leftside from "./Leftside.jsx"
+import Rightside from "./Rightside.jsx"
 
 function Page() {
   return (
-    <div>Page</div>
+    <div>
+        <Leftside />
+        <Rightside />
+    </div>
   )
 }
 
