@@ -2,7 +2,9 @@
 
 function Leftside() {
   return (
-    <div>Leftside</div>
+    <div className="h-full flex w-2/7 bg-mist-400">
+      
+    </div>
   )
 }
 
