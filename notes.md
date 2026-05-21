@@ -42,7 +42,30 @@ Example: function({name, age}) {
 
 in the above the above example we are destructuring the props object and extracting the name and age properties and assigning them to variables name and age. So we can use these variables in our component instead of using props.name and props.age. This makes our code cleaner and more readable.
 ```
+##
 
+## How to add tailwind css in react project
 
+step 1 :-  Create a react project using vite
+
+step 2 :-  Install tailwind css using this command
+```
+npm install tailwindcss @tailwindcss/vite
+```
+
+step 3 :-  import tailwind in the vite.config.js file by adding this code  
+``` 
+import tailwindcss from '@tailwindcss/vite';
+```
+step 4 :-  Add tailwind in the vite.config.js file or add tailwind pluggin, by adding this after react plugin
+```
+tailwindcss()
+```
+Step 5 :-  to use tailwind in project, import it in the index.css file by importing this code 
+``` 
+@import "tailwindcss";
+```
+
+##
 
 
