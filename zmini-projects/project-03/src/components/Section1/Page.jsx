@@ -3,7 +3,7 @@ import Rightside from "./Rightside.jsx"
 
 function Page() {
   return (
-    <div className="h-[90vh] bg-amber-600 flex items-center gap-20 py-8 px-10">
+    <div className="h-[90vh] flex items-center gap-22 px-15">
         <Leftside />
         <Rightside />
     </div>
