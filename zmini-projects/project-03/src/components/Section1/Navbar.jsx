@@ -1,10 +1,13 @@
-import React from 'react'
+import { CornerDownRight } from 'lucide-react';
 
 function Navbar() {
   return (
-    <div className='flex items-center justify-between py-8 px-16'>
-        <h1 className='bg-black text-white px-5 py-2 rounded-full uppercase text-sm'>Target Audience</h1>
-        <button className='bg-gray-300 uppercase px-5 py-2 rounded-full border-none tracking-wider text-xs cursor-pointer'>digital banking platform</button>
+    <div className='flex items-center justify-between py-8 px-10'>
+        <h1 className='bg-black text-white px-4.5 py-2.5 rounded-full uppercase tracking-widest'><pre>Target Audience</pre></h1>
+        <button className='bg-gray-100 flex gap-3 uppercase px-4 py-2.5 rounded-full border-none tracking-widest cursor-pointer font-'>
+          <CornerDownRight size={20}/>
+          <pre>digital banking platform</pre>
+        </button>
         
     </div>
   )
