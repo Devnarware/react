@@ -1,18 +1,20 @@
 
-const hello = () => { 
-    console.log("hello");
+const change = (val) => { 
+    console.log(val);
     
 }
+
 
 function Function() {
   return (
     <div className="">
-        <button className="m-10 bg-gray-700 p-10 rounded-full text-white cursor-pointer" onClick={hello}>Click me</button>
-        <button className="m-10 bg-red-400 p-10 rounded-full text-white cursor-pointer" onClick={() => {
-          console.log("Press me button input");
-          
-        }}>Press me</button>
-
+        
+      <input id="dev"placeholder="Enter some text" 
+        className="bg-gray-600 m-10 px-10 py-5 text-3xl"
+        onChange={function(i){
+          change(i.target.value);
+        }}
+      />
         
     </div>
   )
