@@ -1,9 +1,9 @@
-
+import Function from './components/Function.jsx'
 
 function App() {
   return (
     <>
-      
+      <Function />
     </>
   )
 }
