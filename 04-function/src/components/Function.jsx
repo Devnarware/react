@@ -1,20 +1,25 @@
 
-const change = (val) => { 
-    console.log(val);
-    
-}
 
 
 function Function() {
   return (
     <div className="">
         
-      <input id="dev"placeholder="Enter some text" 
-        className="bg-gray-600 m-10 px-10 py-5 text-3xl"
-        onChange={function(i){
-          change(i.target.value);
+      <div 
+        className="bg-gray-600 text-3xl "
+        onWheel={function(i){
+          if (i.deltaY > 0) {
+            console.log("seedha scrolling");
+          }else{
+            console.log("ulta scrolling");
+          }
+          
         }}
-      />
+      >
+        <div className="h-screen w-screen">Page1</div>
+        <div className="h-screen w-screen">Page2</div>
+        <div className="h-screen w-screen">Page3</div>
+      </div>
         
     </div>
   )

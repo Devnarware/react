@@ -68,4 +68,36 @@ Step 5 :-  to use tailwind in project, import it in the index.css file by import
 
 ##
 
+## Hooks
+
+Hooks are functions that let you use React features inside functional components.
+
+functions like 
+
+1. useState 
+```
+it manage different states in the component.
+```
+2. useContext
+```
+ use gloabal state component without prop drilling.
+```
+3. useReducer
+```
+used to manage complex glabal state in the component.
+```
+
+4. useEffect
+```
+used to perform side effects(do something side by side) in the component like fetching data from api, updating the document title, etc.
+``` 
+5. useRef
+```
+use a componet without accessing DOM element directly or to store a mutable value which does not cause a re-render when updated.
+```
+
+6. useMemo and useCallback
+```
+used to optimize performance, by avoiding unnecessary re-renders and re-computations in the component.
+```
 
