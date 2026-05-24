@@ -68,6 +68,36 @@ Step 5 :-  to use tailwind in project, import it in the index.css file by import
 
 ##
 
+##
+
+## Types of Functions
+
+1. Normal function
+```
+function add(a, b) {
+    return a + b;
+}
+``` 
+2. Arrow function
+```
+const add = (a, b) => {
+    return a + b;
+}
+```
+3. Anonymous function
+```
+setTimeout(function() {
+    console.log("Hello World");
+}, 1000);
+``` 
+4. Function inside a Component
+```
+<div onClick={() => console.log("Hello World")}>
+    </>
+```
+
+
+
 ## Hooks
 
 Hooks are functions that let you use React features inside functional components.
