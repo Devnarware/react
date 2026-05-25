@@ -1,9 +1,10 @@
 import UseState from './hooks/UseState.jsx'
+import AdvanceUseState from './hooks/AdvanceUseState.jsx'
 
 function App() {
   return (
-    <div className='bg-gray-600 h-screen'>
-        <UseState />
+    <div>
+        <AdvanceUseState />
     </div>
   )
 }
