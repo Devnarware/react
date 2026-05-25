@@ -39,7 +39,7 @@ function CardContent() {
 
       {/* Dark gradient for text readability */}
       <div 
-        className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"
+        className="absolute inset-0 bg-linear-to-t from-black/10 to-transparent"
         style={{
           maskImage: 'linear-gradient(to top, black 30%, transparent 70%)',
           WebkitMaskImage: 'linear-gradient(to top, black 30%, transparent 70%)',
