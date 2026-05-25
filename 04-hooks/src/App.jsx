@@ -1,8 +1,10 @@
-import React from 'react'
+import UseState from './hooks/UseState.jsx'
 
 function App() {
   return (
-    <div>App</div>
+    <div className='bg-gray-600 h-screen'>
+        <UseState />
+    </div>
   )
 }
 
