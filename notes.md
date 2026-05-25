@@ -30,7 +30,7 @@ Props are the short form of properties. It is used to pass data from the parent 
 ```
 ##
 
-Destructuring
+## Destructuring
 
 Destructuring is a feature of JavaScript which allows us to extract values from an array or an object or from the function's parameter and assign them to variables. 
 
