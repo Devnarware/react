@@ -1,7 +1,7 @@
-
+let i = 0 
 const submit = (e) => {
     e.preventDefault()
-    console.log("hello");
+    console.log("hello", i++);
     
 }
 
