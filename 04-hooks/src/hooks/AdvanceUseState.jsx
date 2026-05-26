@@ -6,6 +6,7 @@ function AdvanceUseState() {
     const btnClicked = () =>{
         const obj2 = {...obj}
         obj2.name = "david"
+        obj2.age = 27
         setName(obj2)
         console.log(obj, obj2);    
     }
