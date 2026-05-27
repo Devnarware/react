@@ -9,7 +9,7 @@ const TwoWayBinding = () => {
     <div>
         <form onSubmit={(e)=>{
             e.preventDefault()
-            console.log(title);
+            console.log(`Form submitted by ${title}`);
             
         }}>
             <input
