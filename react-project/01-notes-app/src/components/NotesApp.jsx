@@ -3,7 +3,7 @@ import Display from './Display.jsx'
 
 const NotesApp = () => {
   return (
-    <div className='m-5'>
+    <div className='m-12'>
         <Input />
         <Display />
     </div>        
