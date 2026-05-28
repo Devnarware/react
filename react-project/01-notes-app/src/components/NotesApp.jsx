@@ -10,8 +10,8 @@ const NotesApp = () => {
 
   return (
     <div className='lg:flex '>
-        <Input arr={task}/>
-        <Display />
+        <Input tasks={task} setTask={setTask}/>
+        <Display task={task}/>
     </div>        
   )
 }

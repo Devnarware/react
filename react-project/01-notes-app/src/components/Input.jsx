@@ -3,6 +3,7 @@ import { useState } from "react"
 
 
 const Input = (props) => {
+    
 
   const [title, setTitle] = useState('')
   const [details, setDetails] = useState('')
@@ -12,7 +13,17 @@ const Input = (props) => {
             <div className="m-12">
                 <h2 className="text-5xl font-bold mt-15 mb-10">Add Note</h2>
                 <form
-                    className='flex flex-col gap-4 '>
+                    className='flex flex-col gap-4 '
+                    onSubmit={(e)=>{
+                        e.preventDefault()
+                        
+                        const copyTask = [...props.tasks]
+                        copyTask.push({title, details})
+                        props.setTask(copyTask)
+                        console.log(props.task);
+
+                    }}    
+                >
                     <input type="text"
                         placeholder='Enter the title here'
                         className='border-3 px-6 py-4 rounded text-2xl'
