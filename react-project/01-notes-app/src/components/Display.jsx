@@ -22,7 +22,9 @@ const Display = (props) => {
                   key={idx} 
                   className=" h-[12%] w-[90%] bg-red-500 mb-2 rounded-2xl text-[#fcfcfc]"
                   onClick={()=>{
-                    
+                    const copyTask = [...props.task]
+                    copyTask.splice(idx, 1)
+                    props.setTask(copyTask)
                   }}
                 >Delete
                 </button>
