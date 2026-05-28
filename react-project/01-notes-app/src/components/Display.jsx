@@ -2,7 +2,39 @@ import React from 'react'
 
 const Display = () => {
   return (
-    <div>Display</div>
+    <div className='lg:w-[60%]'>
+      <div className="m-12">
+        <h2 className="text-5xl font-bold mt-15 mb-10">Recent Notes</h2>
+        <div className='flex flex-wrap gap-10 '>
+          <div className="h-104 w-75 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+          <div className="h-104 w-74 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden ">
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
