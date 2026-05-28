@@ -17,8 +17,15 @@ const Display = (props) => {
                   <h3 className="text-3xl font-bold text-[#111] leading-8 ">{elem.title}</h3>
                   <p className=" text-[#5a5a5a] h-[90%] overflow-auto">{elem.details}</p>
                 </div>
-                
-                <button className=" h-[12%] w-[90%] bg-red-500 mb-2 rounded-2xl text-[#fcfcfc]">Delete</button>
+
+                <button 
+                  key={idx} 
+                  className=" h-[12%] w-[90%] bg-red-500 mb-2 rounded-2xl text-[#fcfcfc]"
+                  onClick={()=>{
+                    
+                  }}
+                >Delete
+                </button>
               </div>
             )
           })}
