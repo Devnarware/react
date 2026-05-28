@@ -20,8 +20,6 @@ const Input = (props) => {
                         const copyTask = [...props.tasks]
                         copyTask.push({title, details})
                         props.setTask(copyTask)
-                        console.log(props.task);
-
                     }}    
                 >
                     <input type="text"
