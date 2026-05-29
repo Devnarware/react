@@ -1,10 +1,10 @@
-
+import LocalStorage from "./components/LocalStorage.jsx";
 
 const App = () => {
   return (
-      <>
-        App
-      </>
+      <div className="">
+        <LocalStorage />
+      </div>
   )
 }
 
