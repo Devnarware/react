@@ -2,28 +2,26 @@
 
 const LocalStorage = () => {
    
-    // const user = {
-    //     name: "Dev",
-    //     age: 20,
-    //     mail: "dev@example.com"
-    // }    
-    
-    // user.gender = 'male'
-    
-
-    // const userInfo = JSON.stringify(user)
-    // localStorage.setItem('userInfo', userInfo)
+   let users = []
 
     const userInfo = JSON.parse(localStorage.getItem("userInfo"))
+    const userInfo2 = JSON.parse(localStorage.getItem("userInfo"))
+    const userInfo3 = JSON.parse(localStorage.getItem("userInfo"))
+
+    users.push(userInfo)
+    users.push(userInfo2)
+    users.push(userInfo3)
+
+    const allUsers = JSON.stringify(users)
+    localStorage.setItem("All users info", allUsers)
+
+    
 
     
 
   return (
     <div className="m-10 text-3xl">
-        <h2>{userInfo.name}</h2>
-        <h2>{userInfo.mail}</h2>
-        <h2>{userInfo.age}</h2>
-        <h2>{userInfo.gender}</h2>
+        
     </div>
   )
 }
