@@ -130,4 +130,15 @@ use a componet without accessing DOM element directly or to store a mutable valu
 ```
 used to optimize performance, by avoiding unnecessary re-renders and re-computations in the component.
 ```
-## testing webstrom
+## Most Used Hook
+
+1. UseState 
+```
+it is used to change the the state of a component indirectly, means there are two variables one is read only second is write only 
+if we have to change the data in the component or anywhere using react we use UseState
+```
+
+2. Useeffect
+```
+it is like a function but with a condition when it is going to run we can set a variable whenever that is changed this function will run 
+```
