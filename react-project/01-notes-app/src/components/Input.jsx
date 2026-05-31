@@ -21,11 +21,13 @@ const Input = (props) => {
                         copyTask.push({title, details})
                         props.setTask(copyTask)
 
-                        setTitle("")
-                        setDetails("")
+                        // setTitle("")
+                        // setDetails("")
 
-                        // local host
-                        
+                        // local storage
+                        const allTasks = JSON.stringify(copyTask)
+                        localStorage.setItem("allTask", allTasks)
+
                     }}    
                 >
                     <input type="text"

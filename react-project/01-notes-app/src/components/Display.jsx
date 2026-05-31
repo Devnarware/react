@@ -10,7 +10,7 @@ const Display = (props) => {
 
           {props.task.map(function (elem, idx) {
             return (
-              <div className="h-104 w-75 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] bg-cover overflow-hidden px-10 pt-11 flex flex-col justify-between"
+              <div className="h-104 w-75 rounded-2xl bg-red-400 bg-cover overflow-hidden px-10 pt-11 flex flex-col justify-between"
               >
 
                 <div key={idx} className="flex flex-col gap-3 h-[90%]  ">
@@ -25,6 +25,10 @@ const Display = (props) => {
                     const copyTask = [...props.task]
                     copyTask.splice(idx, 1)
                     props.setTask(copyTask)
+
+                    // local storage
+                    const allTasks = JSON.stringify(copyTask)
+                    localStorage.setItem("allTask",allTasks)
                   }}
                 >Delete
                 </button>
@@ -40,3 +44,4 @@ const Display = (props) => {
 }
 
 export default Display
+
