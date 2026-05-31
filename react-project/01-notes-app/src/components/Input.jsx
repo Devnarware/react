@@ -23,6 +23,9 @@ const Input = (props) => {
 
                         setTitle("")
                         setDetails("")
+
+                        // local host
+                        
                     }}    
                 >
                     <input type="text"

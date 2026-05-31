@@ -22,10 +22,6 @@ const LocalStorage = () => {
             console.log(elem.name, idx);
             
         })
-    
-    
-
-    
 
   return (
     <div className="m-10 text-3xl">
