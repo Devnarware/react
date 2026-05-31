@@ -21,7 +21,7 @@ const Display = (props) => {
                 </div>
 
                 <button 
-                  className=" h-[12%] w-[90%] bg-red-500 mb-2 rounded-2xl text-[#fcfcfc]"
+                  className=" h-[12%] w-[90%] bg-red-500 mb-2 rounded-2xl active:scale-95 text-[#fcfcfc]"
                   onClick={()=>{
 
                     // to add the animation

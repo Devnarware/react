@@ -21,8 +21,8 @@ const Input = (props) => {
                         copyTask.push({title, details})
                         props.setTask(copyTask)
 
-                        // setTitle("")
-                        // setDetails("")
+                        setTitle("")
+                        setDetails("")
 
                         // local storage
                         const allTasks = JSON.stringify(copyTask)
@@ -48,7 +48,7 @@ const Input = (props) => {
                     >
                     </textarea>
                     <button
-                        className="px-5 py-2 bg-[#c5c5c5] text-[#000000] rounded-2xl text-3xl"
+                        className="px-5 py-2 bg-[#c5c5c5] active:scale-95 text-[#000000] rounded-2xl text-3xl"
                     >Add Note</button>
                 </form>
             </div>
