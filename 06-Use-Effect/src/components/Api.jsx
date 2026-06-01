@@ -5,7 +5,6 @@ const Api = () => {
 
     const apiCall = async() =>{
         const response = await axios('https://dummyjson.com/quotes')
-        // const data = await response.json()
         console.log(response.data.quotes);  
     }
 
