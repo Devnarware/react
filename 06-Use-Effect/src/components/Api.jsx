@@ -1,12 +1,12 @@
-
+import axios from 'axios'
 
 
 const Api = () => {
 
     const apiCall = async() =>{
-        const response = await fetch('https://dummyjson.com/quotes')
-        const data = await response.json()
-        console.log(data.quotes);  
+        const response = await axios('https://dummyjson.com/quotes')
+        // const data = await response.json()
+        console.log(response.data.quotes);  
     }
 
   return (
