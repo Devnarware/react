@@ -7,7 +7,7 @@ const Gallery = () => {
   const [userData, setUserData] = useState([])
 
   async function getData(){
-    const response = await axios.get('https://picsum.photos/v2/list?page=1&limit=100')
+    const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=12')
     setUserData(response.data)
   }
  
@@ -36,13 +36,18 @@ const Gallery = () => {
   }
 
   return (
-    <div >
+    <div className=''>
       
       <Navbar />
       
-      {/* <div className='flex gap-10 flex-wrap mx-25 my-10 justify-around'>
+      <div className='flex gap-10 flex-wrap mx-25 my-10 justify-around'>
         {showData}
-      </div> */}
+      </div>
+
+      <div className='flex justify-center gap-10'>
+        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'>Prev</button>
+        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'>Next</button>
+      </div>
     </div>
   )
 }
