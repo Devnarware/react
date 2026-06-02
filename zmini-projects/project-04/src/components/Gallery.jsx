@@ -5,10 +5,14 @@ const Gallery = () => {
 
   const [userData, setUserData] = useState([])
 
-
-  const getData = async () => {
+  async function getData(){
     const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=500')
+    setUserData(response.data)
   }
+ 
+  useEffect(() =>{
+    getData()
+  }, [])
 
   
 
@@ -31,7 +35,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className="h-full w-full bg-[#131723]">
+    <div >
       {/* <button
         className="m-10 py-3 px-6  bg-[#70e0e6] rounded-2xl text-3xl text-[#303030]"
         onClick={getData}
