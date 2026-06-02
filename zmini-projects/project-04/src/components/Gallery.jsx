@@ -3,42 +3,36 @@ import { useState } from 'react'
 
 const Gallery = () => {
 
-  const [data, setData] = useState([])
+  const [userData, setUserData] = useState([])
 
-  const apiCall = async () => {
-
-    const response = await axios('https://picsum.photos/v2/list?page=2&limit=10')
-    // const data = await response.data
-    setData(response.data)
-
+  const getData = async()=>{
+    const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=5')
+    setUserData(response.data)
   }
 
-  let showImg = 'EMPTY'
-  if (data.length > 0) {
-    setImg = data.map((elem, idx) => {
-      return (
-        // <img src={elem.data} alt={idx} />
-        "HELLO"
+  let showData = "Nothing to show here"
+  if (userData.length>1) {
+    showData = userData.map(function(elem, idx){
+      return(
+        <div key={idx}>
+          <a href={elem.url}><img src={elem.download_url} alt={idx} /></a>
+        </div>
       )
     })
   }
 
-
   return (
-
-    <div className="h-screen w-full text-3xl bg-[#0c1216]">
-
-      <button
-        className="text-3xl text-[#3d3d3d] m-10 py-4 px-6 rounded-3xl bg-[#4fd4d4]"
-        onClick={apiCall}
-      >Click me</button>
-
+    <div className="h-screen w-full bg-[#131723]">
+      <button 
+        className="m-10 py-3 px-6  bg-[#70e0e6] rounded-2xl text-3xl text-[#303030]"
+        onClick={getData}
+      >
+        Click Me
+      </button>
       <div>
-        {showImg}
+        {showData}
       </div>
-
     </div>
-
   )
 }
 
