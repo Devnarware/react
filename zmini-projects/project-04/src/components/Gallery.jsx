@@ -5,17 +5,18 @@ import Navbar from './Navbar.jsx'
 const Gallery = () => {
 
   const [userData, setUserData] = useState([])
+  const [index, setIndex] = useState(1)
 
-  async function getData(){
-    const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=12')
+  async function getData() {
+    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=12`)
     setUserData(response.data)
   }
- 
-  useEffect(() =>{
+
+  useEffect(() => {
     getData()
   }, [])
 
-  
+
 
   let showData = "Loading....."
   if (userData.length > 1) {
@@ -37,16 +38,31 @@ const Gallery = () => {
 
   return (
     <div className=''>
-      
+
       <Navbar />
-      
+
       <div className='flex gap-10 flex-wrap mx-25 my-10 justify-around'>
         {showData}
       </div>
 
-      <div className='flex justify-center gap-10'>
-        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'>Prev</button>
-        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'>Next</button>
+      <div className='flex justify-center gap-20 m-20'>
+        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'
+          onClick={() => {
+            if (index > 1) {
+              setUserData([])
+              setIndex(index - 1)
+              getData()
+            }
+            
+          }}
+        >Prev</button>
+        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'
+          onClick={() => {
+            setUserData([])
+            setIndex(index + 1)
+            getData()
+          }}
+        >Next</button>
       </div>
     </div>
   )
