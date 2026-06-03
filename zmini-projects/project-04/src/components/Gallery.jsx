@@ -22,14 +22,14 @@ const Gallery = () => {
 
   let showData = "Loading....."
   if (userData.length > 1) {
-    showData = userData.map(function (elem, idx) {
+    showData = userData.map(function (elem) {
       return (
         
-        <div key={idx} className='flex flex-col gap-5'>
+        <div key={elem.id} className='flex flex-col gap-5'>
           <a href={elem.url} target='_blank'>
             <div>
-              <img src={elem.download_url} alt={idx}
-                className='h-60 object-cover'
+              <img src={elem.download_url} alt={elem.author}
+                className='h-60 object-cover hover:scale-110 '
               />
             </div>
           </a>
@@ -49,18 +49,20 @@ const Gallery = () => {
       </div>
 
       <div className='flex justify-center gap-40 m-20'>
-        <button className='pr-5 pl-4 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2 '
+        <button className='pr-5 pl-4 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2  '
           onClick={() => {
             console.log(index);
             
             if (index > 1) {
               setUserData([])
               setIndex(index - 1)
+            }else{
+              // disable the button if the iondex is 1
             }
             
           }}
           > <ChevronLeft className='mt-0.5' size={30} strokeWidth={2.4}/> Prev</button>
-          <h1 className='text-3xl px-10 py-4'>{index}</h1>
+          <h1 className='text-3xl px-10 py-4'>Page {index}</h1>
         <button className='pr-4 pl-5  py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2'
           onClick={() => {
             setUserData([])
