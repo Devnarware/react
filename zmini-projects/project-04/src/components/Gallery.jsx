@@ -10,7 +10,7 @@ const Gallery = () => {
   const [index, setIndex] = useState(1)
 
   async function getData() {
-    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=2`)
+    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=12`)
     setUserData(response.data)
   }
 
@@ -49,7 +49,7 @@ const Gallery = () => {
       </div>
 
       <div className='flex justify-center gap-40 m-20'>
-        <button className='px-5 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex justifybetween '
+        <button className='pr-5 pl-4 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2 '
           onClick={() => {
             console.log(index);
             
@@ -59,14 +59,14 @@ const Gallery = () => {
             }
             
           }}
-          > <ChevronLeft className='mt-0.5' size={30} strokeWidth={2}/> Prev</button>
+          > <ChevronLeft className='mt-0.5' size={30} strokeWidth={2.4}/> Prev</button>
           <h1 className='text-3xl px-10 py-4'>{index}</h1>
-        <button className='px-5 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-1.5'
+        <button className='pr-4 pl-5  py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2'
           onClick={() => {
             setUserData([])
             setIndex(index + 1)
           }}
-        >Next <ChevronRight className='mt-0.5' size={30} strokeWidth={2}/></button>
+        >Next <ChevronRight className='mt-0.5' size={30} strokeWidth={2.4}/></button>
       </div>
     </div>
   )
