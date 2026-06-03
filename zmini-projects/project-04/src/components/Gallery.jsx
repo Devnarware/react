@@ -14,7 +14,7 @@ const Gallery = () => {
 
   useEffect(() => {
     getData()
-  }, [])
+  }, [index])
 
 
 
@@ -22,6 +22,7 @@ const Gallery = () => {
   if (userData.length > 1) {
     showData = userData.map(function (elem, idx) {
       return (
+        
         <div key={idx} className='flex flex-col gap-5'>
           <a href={elem.url} target='_blank'>
             <div>
@@ -48,19 +49,20 @@ const Gallery = () => {
       <div className='flex justify-center gap-20 m-20'>
         <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'
           onClick={() => {
+            console.log(index);
+            
             if (index > 1) {
               setUserData([])
               setIndex(index - 1)
-              getData()
             }
             
           }}
-        >Prev</button>
+          >Prev</button>
         <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'
           onClick={() => {
+            console.log(index);
             setUserData([])
             setIndex(index + 1)
-            getData()
           }}
         >Next</button>
       </div>
