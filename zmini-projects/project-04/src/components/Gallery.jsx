@@ -1,6 +1,8 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Navbar from './Navbar.jsx'
+import { ChevronLeft } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 const Gallery = () => {
 
@@ -8,7 +10,7 @@ const Gallery = () => {
   const [index, setIndex] = useState(1)
 
   async function getData() {
-    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=12`)
+    const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=2`)
     setUserData(response.data)
   }
 
@@ -46,8 +48,8 @@ const Gallery = () => {
         {showData}
       </div>
 
-      <div className='flex justify-center gap-20 m-20'>
-        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'
+      <div className='flex justify-center gap-40 m-20'>
+        <button className='px-5 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex justifybetween '
           onClick={() => {
             console.log(index);
             
@@ -57,14 +59,14 @@ const Gallery = () => {
             }
             
           }}
-          >Prev</button>
-        <button className='px-10 py-4 bg-[#5d5d5d] rounded active:scale-96 cursor-pointer'
+          > <ChevronLeft className='mt-0.5' size={30} strokeWidth={2}/> Prev</button>
+          <h1 className='text-3xl px-10 py-4'>{index}</h1>
+        <button className='px-5 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-1.5'
           onClick={() => {
-            console.log(index);
             setUserData([])
             setIndex(index + 1)
           }}
-        >Next</button>
+        >Next <ChevronRight className='mt-0.5' size={30} strokeWidth={2}/></button>
       </div>
     </div>
   )

@@ -2,7 +2,7 @@
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between p-10 text-3xl border-b-1">
+    <div className="flex justify-between p-10 text-3xl border-b">
         <div>
             <h1>PhotoPia</h1>
         </div>
