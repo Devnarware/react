@@ -49,9 +49,9 @@ const Gallery = () => {
       </div>
 
       <div className='flex justify-center gap-40 m-20'>
-        <button className='pr-5 pl-4 py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2  '
+        <button className={`pr-5 pl-4 py-4 text-2xl rounded-2xl flex gap-2 bg-[#5d5d5d] 
+         ${index <= 1 ? 'opacity-50':'cursor-pointer active:scale-96'} `}
           onClick={() => {
-            console.log(index);
             
             if (index > 1) {
               setUserData([])
@@ -63,7 +63,7 @@ const Gallery = () => {
           }}
           > <ChevronLeft className='mt-0.5' size={30} strokeWidth={2.4}/> Prev</button>
           <h1 className='text-3xl px-10 py-4'>Page {index}</h1>
-        <button className='pr-4 pl-5  py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2'
+        <button className={`pr-4 pl-5  py-4 text-2xl bg-[#5d5d5d] rounded-2xl active:scale-96 cursor-pointer flex gap-2`}
           onClick={() => {
             setUserData([])
             setIndex(index + 1)
