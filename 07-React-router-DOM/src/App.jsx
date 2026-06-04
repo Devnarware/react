@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Product from './pages/Product.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 
 
@@ -17,6 +18,9 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/product' element={<Product />} />
+
+
+        <Route path='/*' element={<NotFound />} />
       </Routes>
       
     </div>
