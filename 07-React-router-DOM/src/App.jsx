@@ -4,8 +4,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Product from './pages/Product.jsx'
 
-import Main from './components/Main.jsx'
-import Footer from './components/Footer.jsx'
+
 
 const App = () => {
   return (

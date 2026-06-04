@@ -142,3 +142,57 @@ if we have to change the data in the component or anywhere using react we use Us
 ```
 it is like a function but with a condition when it is going to run we can set a variable whenever that is changed this function will run 
 ```
+##
+
+
+## Routing in REACT
+
+There is no in-built routing in react, but we can use it using 
+``` 
+react-router-DOM
+``` 
+It is a external library which provide us the functionality to use Routing in react
+
+there are mulitiple tupes of routing
+
+- Browser Routing
+- Hash Routing
+- Memory Routing
+- Static Routing
+
+But we maily use Brower Routing in the react as it is best for web or Browser based Routing 
+
+## 
+
+## Browser Routing 
+
+to use that first we have to install it using npn command
+```
+npm install react-router-dom
+```
+
+Step 2: We have to tell what kind of Routing we are performing, So we wrap the components with it
+
+```
+ <BrowserRouter>
+     <App />
+ </BrowserRouter>
+```
+
+Step 3: Now we have wrap all the components on which we have to perform the Routing
+
+```
+<Routes>
+     <Route />
+ </Routes>
+```
+
+Step 4: Now to have to describe at what route what page or component will be shown 
+
+```
+<Route path='/' element={<Home />} />
+<Route path='/about' element={<About />} />
+<Route path='/product' element={<Product />} />
+```
+
+This is it, it is the basic Routing now whenever a person go to a specific route he will see that page content
