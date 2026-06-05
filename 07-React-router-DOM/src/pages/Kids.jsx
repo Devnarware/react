@@ -1,13 +1,13 @@
+import React from 'react'
 
-
-function Men() {
+const Kids = () => {
   return (
     <div>
-        <h1 
+         <h1 
          className="text-6xl text-[#adadad] h-200 flex items-center justify-center  "
-        >Men's Collectiom</h1> 
+        >Kids Collection</h1>
     </div>
   )
 }
 
-export default Men
+export default Kids
