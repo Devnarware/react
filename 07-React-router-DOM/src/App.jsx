@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Product from './pages/Product.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Men from './pages/Men.jsx'
 
 
 
@@ -17,7 +18,10 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/product' element={<Product />} />
+
+        <Route path='/product' element={<Product />} >
+          <Route path='men' element={<Men />} />
+        </Route>
 
 
         <Route path='/*' element={<NotFound />} />
