@@ -10,7 +10,7 @@ const NotesApp = () => {
   const [task, setTask] = useState([])
 
   // localstorage
-  const allTasks = JSON.parse(localStorage.getItem("allTask"))
+  const allTasks = JSON.parse(localStorage.getItem("allTask")) || []
   useEffect(() => {
     setTask(allTasks)
   }, [])
