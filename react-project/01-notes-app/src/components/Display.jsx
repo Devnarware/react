@@ -8,7 +8,7 @@ const Display = (props) => {
         <div className='hide-scrollbar flex flex-wrap gap-9 h-245 overflow-y-auto'>
 
 
-          {props.task.map(function (elem, idx) {
+          {props.task?.map(function (elem, idx) {
             return (
               <div
                 key={idx}

@@ -5,7 +5,7 @@ function Men() {
     <div>
         <h1 
          className="text-6xl text-[#adadad] h-200 flex items-center justify-center  "
-        >Men's Collectiom</h1> 
+        >Men's Collection</h1> 
     </div>
   )
 }

@@ -3,9 +3,9 @@ import { Link, Outlet } from "react-router-dom"
 function Product() {
   return (
     <div>
-      {/* <h1
+      <h1
         className="text-6xl text-[#adadad] h-200  flex items-center justify-center"
-      >Products</h1> */}
+      >Products</h1>
 
       <div className="flex justify-center gap-30 m-5 text-[#cecece]">
         <Link to='/product/men'className="text-2xl " >Men</Link>
